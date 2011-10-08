@@ -21,14 +21,15 @@
 		4C8E555D1440FBEE00BFC47B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		4C8E555E1440FBEE00BFC47B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		4C8E555F1440FBEE00BFC47B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		4C8E55621440FBEE00BFC47B /* SandPath-Info.plist */ = {isa = PBXFileReference; path = "SandPath-Info.plist"; sourceTree = "<group>"; };
+		4C8E55621440FBEE00BFC47B /* SandPath-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SandPath-Info.plist"; sourceTree = "<group>"; };
 		4C8E55641440FBEE00BFC47B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4C8E55661440FBEE00BFC47B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4C8E55681440FBEE00BFC47B /* SandPath-Prefix.pch */ = {isa = PBXFileReference; path = "SandPath-Prefix.pch"; sourceTree = "<group>"; };
+		4C8E55681440FBEE00BFC47B /* SandPath-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SandPath-Prefix.pch"; sourceTree = "<group>"; };
 		4C8E556A1440FBEE00BFC47B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		4C8E556C1440FBEE00BFC47B /* SandPathAppDelegate.h */ = {isa = PBXFileReference; path = SandPathAppDelegate.h; sourceTree = "<group>"; };
+		4C8E556C1440FBEE00BFC47B /* SandPathAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SandPathAppDelegate.h; sourceTree = "<group>"; };
 		4C8E556D1440FBEE00BFC47B /* SandPathAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SandPathAppDelegate.m; sourceTree = "<group>"; };
 		4C8E55701440FBEE00BFC47B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4C8E55771440FC5800BFC47B /* SandPath.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SandPath.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +83,7 @@
 		4C8E55601440FBEE00BFC47B /* SandPath */ = {
 			isa = PBXGroup;
 			children = (
+				4C8E55771440FC5800BFC47B /* SandPath.entitlements */,
 				4C8E556C1440FBEE00BFC47B /* SandPathAppDelegate.h */,
 				4C8E556D1440FBEE00BFC47B /* SandPathAppDelegate.m */,
 				4C8E556F1440FBEE00BFC47B /* MainMenu.xib */,
@@ -128,6 +130,7 @@
 		4C8E554D1440FBEE00BFC47B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = Pomcast.net;
 			};
 			buildConfigurationList = 4C8E55501440FBEE00BFC47B /* Build configuration list for PBXProject "SandPath" */;
@@ -248,6 +251,8 @@
 		4C8E55751440FBEE00BFC47B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SandPath/SandPath.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SandPath/SandPath-Prefix.pch";
 				INFOPLIST_FILE = "SandPath/SandPath-Info.plist";
@@ -259,6 +264,8 @@
 		4C8E55761440FBEE00BFC47B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SandPath/SandPath.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SandPath/SandPath-Prefix.pch";
 				INFOPLIST_FILE = "SandPath/SandPath-Info.plist";
@@ -286,6 +293,7 @@
 				4C8E55761440FBEE00BFC47B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
