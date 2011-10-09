@@ -1,3 +1,6 @@
+##Good news
+Fixed in 10.7.2 -- See [@radian's comment](https://twitter.com/#!/radian/status/123072764142829568)
+
     GNU gdb 6.3.50-20050815 (Apple version gdb-1705) (Fri Jul  1 10:50:06 UTC 2011)
     Copyright 2004 Free Software Foundation, Inc.
     GDB is free software, covered by the GNU General Public License, and you are
